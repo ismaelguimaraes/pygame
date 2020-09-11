@@ -2,11 +2,29 @@
 
 from characters.player import *
 
+commands = {
+    'help': help,
+    'exit': exit
+}
+
 player = Player("Default", 1, 1, 1)
 
-def main():
-    name = input("What is your name? ")
-    player.name = name
-    print("Your name is ", player.name)
+def isValidCMD(cmd):
+    if cmd in commands:
+        return True
+    return False
 
-main()
+
+def main(player):
+
+    while (not player.dead):
+        line = input(">> ")
+        Input = line.split()
+
+        if isValidCMD(Input[0]):
+            print(Input[0])
+
+
+        print(Input)
+
+main(player)
