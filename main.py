@@ -5,8 +5,8 @@ from characters.player import *
 player = Player("Default", 1, 1, 1)
 
 def main():
-    name = input("What is your name?")
+    name = input("What is your name? ")
     player.name = name
-    print("Your name is", name)
+    print("Your name is ", player.name)
 
 main()
