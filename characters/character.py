@@ -1,7 +1,7 @@
 class Character(object):
-    def __init__(self, name, hp, money):
+    def __init__(self, name, hp):
         self.name = name
         self.hp = hp
-        self.money = money
 
-    # def attack(self, other):
+    def attack(self, other):
+        pass

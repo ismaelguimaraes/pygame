@@ -1,6 +1,6 @@
-from character import *
+from .character import *
 
 class Enemy(Character):
-    def __init__(self, name, hp, money, str):
-        Character.__init__(self, name, hp, money)
+    def __init__(self, name, hp, str):
+        Character.__init__(self, name, hp)
         self.str = str

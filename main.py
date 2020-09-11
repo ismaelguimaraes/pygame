@@ -1,11 +1,12 @@
-# Arquivo principal do jogo
+# Main game file
+
 from characters.player import *
 
-player = Player("Padrão", 1, 1, 1, 1)
+player = Player("Default", 1, 1, 1)
 
 def main():
-    name = input("Insira o nome do seu personagem:")
+    name = input("What is your name?")
     player.name = name
-    print ("Seu nome é ", name)
+    print("Your name is", name)
 
 main()
